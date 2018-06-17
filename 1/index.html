@@ -5,13 +5,29 @@ Tip: Investigar el evento window.onload
 
 -->
 
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
+    <title>ejercicio 1</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" type="text/javascript"></script>
+ </head>
+ <body>
+    <img src="https://source.unsplash.com/random/800x600">
+    <img src="https://source.unsplash.com/random/800x600">
+    <img src="https://source.unsplash.com/random/800x600">
+    <img src="https://source.unsplash.com/random/800x600">
+    <img src="https://source.unsplash.com/random/800x600">
+    <img src="https://source.unsplash.com/random/800x600">
+  	<script>
+  		$(document).ready(function(){
+  			alert("DOM ready!");
+  		});
+  		$(window).on("load", function(){
+  			alert("listo");
+  		});
+  	</script>
 
-  </body>
+ </body>
 </html>

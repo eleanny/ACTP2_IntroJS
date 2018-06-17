@@ -11,9 +11,28 @@ de un segundo, al volver hacer click debe volver a estar en blanco y negro.
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>ejrcicio 2</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" type="text/javascript"></script>
   </head>
   <body>
+  	<img src="https://source.unsplash.com/random/200x200">
+    <img src="https://source.unsplash.com/random/200x200">
+    <img src="https://source.unsplash.com/random/200x200">
+    <img src="https://source.unsplash.com/random/200x200">
+    <img src="https://source.unsplash.com/random/200x200">
+    <img src="https://source.unsplash.com/random/200x200">
+    <script>
+    	$(document).ready(function(){
+           $("img").css("filter","grayscale(100%)");
+    	});
+    	$("img").click(function(e){
+    		  $("img").css("filter","grayscale(100%)");
+              $(e.currentTarget).css({
+              	filter: 'grayscale(0%)',
+              	transition: 'all 1s'
 
+              });
+    	});
+    </script>
   </body>
 </html>
